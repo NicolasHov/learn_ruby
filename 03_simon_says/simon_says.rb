@@ -5,7 +5,7 @@
 #end
 
 def echo(text)
-	text 
+	text
 end
 
 def shout(text)
@@ -25,5 +25,7 @@ def first_word(text)
 end
 
 def titleize(text)
-	text.split.map(&:capitalize).join(' ')
+	text.split(//)[0].upcase
 end
+
+puts titleize("jaws")
